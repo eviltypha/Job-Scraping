@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Non Interesting URLs</h2>
+{% for url in urls %}
+<div>
+  <p><strong>id : </strong>{{url.id}}</p>
+  <p><strong>BASE : </strong>{{url.BASE}}</p>
+  <p><strong>URL : </strong>{{url.URL}}</p>
+  <p>---------------------------------------------------------</p>
+</div>
+{% endfor %} {% endblock %}

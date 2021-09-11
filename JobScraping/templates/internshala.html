@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Internshala</h2>
+{% for job in jobs %}
+<div>
+  <p><strong>id : </strong>{{job.id}}</p>
+  <p><strong>title : </strong>{{job.title}}</p>
+  <p><strong>validThrough : </strong>{{job.validThrough}}</p>
+  <p>
+    <strong>applicantLocationRequirement</strong
+    >{{job.applicantLocationRequirement}}
+  </p>
+  <p><strong>hiringOrganization : </strong>{{job.hiringOrganization}}</p>
+  <p><strong>employmentType : </strong>{{job.employmentType}}</p>
+  <p><strong>directApply : </strong>{{job.directApply}}</p>
+  <p><strong>jobLocation : </strong>{{job.jobLocation}}</p>
+  <p><strong>datePosted : </strong>{{job.datePosted}}</p>
+  <p><strong>responsibilities : </strong>{{job.responsibilities}}</p>
+  <p><strong>salaryCurrency : </strong>{{job.salaryCurrency}}</p>
+  <p><strong>baseSalary : </strong>{{job.baseSalary}}</p>
+  <p><strong>description : </strong>{{job.description}}</p>
+  <p><strong>organizationURL : </strong>{{job.organizationURL}}</p>
+  <p><strong>category : </strong>{{job.category}}</p>
+  <p>---------------------------------------------------------</p>
+</div>
+{% endfor %} {% endblock %}
